@@ -7,7 +7,11 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between my-5 md:my-10 items-center  w-11/12 mx-auto py-8 ">
       <div className="hidden  md:flex items-center gap-2 ">
-        <img className="w-10 h-10 rounded-full" src={brandLogo} alt="" />
+        <img
+          className="w-10 h-10 rounded-full"
+          src={brandLogo}
+          alt="Brandlogo"
+        />
         <a className=" text-xl font-bold text-white">Gadget Heaven</a>
       </div>
       <div className="">

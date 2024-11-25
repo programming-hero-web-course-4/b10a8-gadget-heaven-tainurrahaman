@@ -1,10 +1,12 @@
-import Home from "./Home";
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Root = () => {
   return (
-    <>
-      <Home></Home>
-    </>
+    <div className="bg-[#9538E2] mx-5 md:mx-10 rounded-2xl">
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+    </div>
   );
 };
 
