@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root.jsx";
 import Home from "./components/Home.jsx";
-import Banner from "./components/Banner.jsx";
 
 const router = createBrowserRouter([
   {
