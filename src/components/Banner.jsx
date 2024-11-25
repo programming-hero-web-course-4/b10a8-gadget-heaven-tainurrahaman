@@ -4,7 +4,7 @@ import bannerImg from "../assets/banner.jpg";
 const Banner = () => {
   return (
     <div className="relative">
-      <div className="text-center text-white pb-28 md:pb-56 lg:pb-96 relative">
+      <div className="text-center text-white pb-28 md:pb-56 lg:pb-96 ">
         <h2 className="text-[20px] md:text-[56px] font-bold px-5 md:px-20 mb-5">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
         </h2>
@@ -18,7 +18,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-center rounded-3xl absolute left-[68px] md:left-36 lg:left-48 bottom-[320px] md:-bottom-[650px] lg:-bottom-[550px]">
+      <div className="flex justify-center rounded-3xl absolute left-[48px] md:left-24 lg:left-44 -bottom-[95px] md:-bottom-[240px] lg:-bottom-[290px]">
         <div className="border-2 rounded-3xl p-2 md:p-5">
           <img
             className="max-w-[250px] md:max-w-xl lg:max-w-4xl rounded-2xl "
@@ -27,7 +27,6 @@ const Banner = () => {
           />
         </div>
       </div>
-      <h4 className="text-5xl">abcd</h4>
     </div>
   );
 };
