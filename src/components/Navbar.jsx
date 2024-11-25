@@ -1,7 +1,6 @@
 import brandLogo from "../assets/brandLogo.webp";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
