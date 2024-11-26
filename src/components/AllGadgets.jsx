@@ -12,7 +12,7 @@ const AllGadgets = () => {
 
   return (
     <div className="bg-[#1D232A] pt-[125px] md:pt-80 lg:pt-96 pb-10 md:pb-16 lg:pb-24">
-      <h3 className="font-bold text-[22px] md:text-[40px] text-white text-center mb-8">
+      <h3 className="font-bold text-[22px] md:text-[40px] text-white text-center mb-8 lg:mb-16">
         Explore Cutting-Edge Gadgets
       </h3>
       <div className="w-full md:w-11/12 lg:w-10/12 mx-auto flex gap-2 md:gap-6">
