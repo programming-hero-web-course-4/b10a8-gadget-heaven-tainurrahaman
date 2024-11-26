@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="relative">
       <div className="text-center text-white pb-28 md:pb-56 lg:pb-96 ">
         <h2 className="text-[20px] md:text-[56px] font-bold px-5 md:px-20 mb-5">
-          Upgrade Your Tech Accessorize with Gadget Heaven Accessories
+          Upgrade Your Tech Accessorize with Gadget Heaven Accessories..
         </h2>
         <p className="text-[16px] font-normal px-10 md:px-56 mb-4 md:mb-8">
           Explore the latest gadgets that will take your experience to the next
