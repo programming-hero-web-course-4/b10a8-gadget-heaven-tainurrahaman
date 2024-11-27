@@ -28,6 +28,11 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <DashBoard></DashBoard>,
       },
+      // {
+      //   path: "/statistics",
+      //   element: <Statistics></Statistics>,
+      //   loader: () => fetch("/gadgetData.json"),
+      // },
     ],
   },
 ]);

@@ -14,14 +14,10 @@ const Navbar = () => {
         />
         <a className=" text-xl font-bold text-white">Gadget Heaven</a>
       </div>
-      <div className="">
-        <ul className="flex flex-row text-white font-bold text-[12px] md:text-[16px] gap-4 md:gap-10">
-          <Link to="/">Home</Link>
-          <li>
-            <a>Statistics</a>
-          </li>
-          <Link to="/dashboard">Dashboard</Link>
-        </ul>
+      <div className="flex flex-row text-white font-bold text-[12px] md:text-[16px] gap-4 md:gap-10">
+        <Link to="/">Home</Link>
+        <Link to="/statistics">Statistics</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </div>
 
       <div className="flex gap-2 justify-center items-center">
