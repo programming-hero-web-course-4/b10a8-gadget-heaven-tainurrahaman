@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root.jsx";
 import Home from "./components/Home.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import GadgetDetails from "./components/GadgetDetails.jsx";
 import DashBoard from "./components/DashBoard.jsx";
+import Statistics from "./components/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,11 +28,11 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <DashBoard></DashBoard>,
       },
-      // {
-      //   path: "/statistics",
-      //   element: <Statistics></Statistics>,
-      //   loader: () => fetch("/gadgetData.json"),
-      // },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+        loader: () => fetch("/gadgetData.json"),
+      },
     ],
   },
 ]);
