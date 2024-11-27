@@ -1,6 +1,8 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import React from "react";
 
 const GadgetDetails = () => {
   const { product_id } = useParams();
@@ -19,7 +21,7 @@ const GadgetDetails = () => {
   } = product;
 
   return (
-    <div className="relative pb-80 mb-96 ">
+    <div className="relative pb-80 mb-80 ">
       <div className="text-center text-white w-8/12 mx-auto space-y-3">
         <h2 className="font-bold text-[32px]">Product Details</h2>
         <p className="text-[16px] font-normal px-24">
@@ -27,11 +29,11 @@ const GadgetDetails = () => {
           level. From smart devices to the coolest accessories, we have it all!
         </p>
       </div>
-      <div className="w-5/6 mx-auto bg-[#1D232A] flex flex-col md:flex-row justify-center items-center my-10 md:gap-6 lg:gap-8 absolute left-48 rounded-xl text-white">
-        <div className="bg-[#FFFFFF] w-2/5 rounded-2xl flex justify-center">
+      <div className="w-5/6 mx-auto bg-[#1D232A] flex flex-col md:flex-row justify-center items-center my-10 md:gap-6 lg:gap-8 absolute left-28 rounded-xl text-white p-6">
+        <div className=" w-2/5 rounded-2xl flex justify-center">
           <img
             src={product_image}
-            className="rounded-xl shadow-2xl max-w-sm  h-[300px]"
+            className="rounded-xl shadow-2xl max-w-sm  h-[350px]"
           />
         </div>
         <div className="w-3/5 flex flex-col items-start h-full p-8 md:p-0 space-y-3">
@@ -43,6 +45,56 @@ const GadgetDetails = () => {
             {`${availability ? "In Stock" : "Stock Out"} `}
           </button>
           <p className="font-normal text-[18px]">{description}</p>
+          <div>
+            <p className="font-bold text-[18px] mb-4">Specification:</p>
+            <p>
+              {specification.map((spec, index) => (
+                <React.Fragment key={index}>
+                  . {spec}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+          </div>
+          <p className="font-bold text-[18px] flex items-center gap-1 ">
+            Rating
+            <span className="text-yellow-300">
+              <FaStar />
+            </span>
+          </p>
+          <div className="flex  items-center gap-4 mb-6">
+            <div className="rating">
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+                defaultChecked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <button className="bg-gray-800 px-3 py-1 rounded-xl">
+              {rating}
+            </button>
+          </div>
           <div className="flex items-center gap-4 ">
             <div>
               <Link className="flex items-center bg-[#9538E2] py-2 px-4 rounded-full gap-2 font-bold text-[18px]">

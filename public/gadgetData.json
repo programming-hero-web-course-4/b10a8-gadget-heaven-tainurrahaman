@@ -6,12 +6,13 @@
     "category": "Iphone",
     "price": 999,
     "description": "The iPhone 14 Pro features a powerful A16 Bionic chip, stunning display, and exceptional camera.",
-    "specification": {
-      "chip": "A16 Bionic",
-      "storage": "128GB",
-      "color": "Deep Purple",
-      "camera": "48MP"
-    },
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 1TB storage"
+    ],
     "availability": true,
     "rating": 4.8
   },
@@ -22,12 +23,13 @@
     "category": "MacBook",
     "price": 1199,
     "description": "The MacBook Air with M2 chip offers blazing-fast performance in a sleek, lightweight design.",
-    "specification": {
-      "processor": "M2",
-      "display": "13.6-inch Retina",
-      "battery": "18 hours",
-      "color": "Silver"
-    },
+    "specification": [
+      "13.6-inch Liquid Retina display",
+      "M2 chip",
+      "Up to 24GB unified memory",
+      "18 hours battery life",
+      "MagSafe charging"
+    ],
     "availability": true,
     "rating": 4.7
   },
@@ -38,12 +40,13 @@
     "category": "Smart Watches",
     "price": 399,
     "description": "The Apple Watch Series 9 keeps you connected, healthy, and active with advanced tracking features.",
-    "specification": {
-      "case_size": "41mm",
-      "connectivity": "GPS + Cellular",
-      "water_resistance": "50 meters",
-      "color": "Midnight"
-    },
+    "specification": [
+      "41mm or 45mm Always-On Retina display",
+      "S9 chip",
+      "Blood oxygen sensor",
+      "Water resistant up to 50m",
+      "GPS + Cellular connectivity"
+    ],
     "availability": true,
     "rating": 4.6
   },
@@ -54,12 +57,13 @@
     "category": "Iphone",
     "price": 799,
     "description": "The iPhone 13 offers excellent performance and great battery life at an affordable price.",
-    "specification": {
-      "chip": "A15 Bionic",
-      "storage": "256GB",
-      "color": "Pink",
-      "camera": "12MP"
-    },
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual-camera system (12MP Main, 12MP Ultrawide)",
+      "Up to 512GB storage",
+      "Ceramic Shield front"
+    ],
     "availability": true,
     "rating": 4.5
   },
@@ -70,12 +74,13 @@
     "category": "MacBook",
     "price": 2499,
     "description": "The MacBook Pro 16 delivers incredible performance with the M1 Pro chip and stunning XDR display.",
-    "specification": {
-      "processor": "M1 Pro",
-      "display": "16-inch Retina XDR",
-      "battery": "21 hours",
-      "color": "Space Gray"
-    },
+    "specification": [
+      "16.2-inch Liquid Retina XDR display",
+      "M1 Pro chip",
+      "Up to 64GB unified memory",
+      "21 hours battery life",
+      "Six-speaker sound system"
+    ],
     "availability": true,
     "rating": 4.9
   },
@@ -86,12 +91,13 @@
     "category": "Phones",
     "price": 1200,
     "description": "A premium smartphone with cutting-edge technology and exceptional camera capabilities.",
-    "specification": {
-      "chip": "Snapdragon 8 Gen 2",
-      "storage": "512GB",
-      "camera": "200MP",
-      "battery": "5000mAh"
-    },
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2 chip",
+      "200MP Quad-camera system",
+      "5000mAh battery",
+      "Up to 1TB storage"
+    ],
     "availability": true,
     "rating": 4.7
   },
@@ -102,12 +108,13 @@
     "category": "Laptops",
     "price": 999,
     "description": "The Dell XPS 13 is a compact and powerful laptop with a stunning InfinityEdge display.",
-    "specification": {
-      "processor": "Intel i7",
-      "storage": "1TB SSD",
-      "display": "13.4-inch UHD",
-      "color": "White"
-    },
+    "specification": [
+      "13.4-inch InfinityEdge UHD display",
+      "Intel Core i7 processor",
+      "1TB SSD storage",
+      "16GB RAM",
+      "White finish"
+    ],
     "availability": true,
     "rating": 4.8
   },
@@ -118,12 +125,13 @@
     "category": "Accessories",
     "price": 249,
     "description": "AirPods Pro offer active noise cancellation and immersive sound in a lightweight design.",
-    "specification": {
-      "connectivity": "Bluetooth",
-      "battery": "4.5 hours",
-      "water_resistance": "IPX4",
-      "color": "White"
-    },
+    "specification": [
+      "Bluetooth connectivity",
+      "Active noise cancellation",
+      "4.5 hours listening time per charge",
+      "IPX4 water resistance",
+      "Lightweight design"
+    ],
     "availability": true,
     "rating": 4.6
   },
@@ -134,12 +142,13 @@
     "category": "Smart Watches",
     "price": 699,
     "description": "The Garmin Fenix 7 is a rugged smartwatch with advanced fitness tracking and GPS capabilities.",
-    "specification": {
-      "case_size": "47mm",
-      "connectivity": "GPS",
-      "battery": "18 days",
-      "color": "Slate Gray"
-    },
+    "specification": [
+      "47mm case size",
+      "GPS navigation",
+      "18 days battery life",
+      "Water resistant up to 100m",
+      "Rugged design"
+    ],
     "availability": true,
     "rating": 4.7
   },
@@ -150,12 +159,13 @@
     "category": "Laptops",
     "price": 1399,
     "description": "A versatile 2-in-1 laptop with powerful performance and a stunning touchscreen display.",
-    "specification": {
-      "processor": "Intel i7",
-      "storage": "512GB SSD",
-      "display": "13.5-inch OLED",
-      "color": "Poseidon Blue"
-    },
+    "specification": [
+      "13.5-inch OLED touchscreen",
+      "Intel Core i7 processor",
+      "512GB SSD storage",
+      "16GB RAM",
+      "Poseidon Blue finish"
+    ],
     "availability": true,
     "rating": 4.6
   },
@@ -166,12 +176,13 @@
     "category": "Accessories",
     "price": 149,
     "description": "True wireless earbuds with active noise cancellation and a comfortable fit.",
-    "specification": {
-      "connectivity": "Bluetooth",
-      "battery": "7.5 hours",
-      "water_resistance": "IPX2",
-      "color": "Graphite"
-    },
+    "specification": [
+      "Bluetooth connectivity",
+      "Active noise cancellation",
+      "7.5 hours battery life",
+      "IPX2 water resistance",
+      "Compact charging case"
+    ],
     "availability": false,
     "rating": 4.4
   },
@@ -182,12 +193,13 @@
     "category": "Iphone",
     "price": 429,
     "description": "Compact and affordable, the iPhone SE offers powerful performance with the A15 Bionic chip.",
-    "specification": {
-      "chip": "A15 Bionic",
-      "storage": "64GB",
-      "color": "Red",
-      "camera": "12MP"
-    },
+    "specification": [
+      "4.7-inch Retina HD display",
+      "A15 Bionic chip",
+      "12MP camera",
+      "Touch ID",
+      "Up to 256GB storage"
+    ],
     "availability": true,
     "rating": 4.5
   }
