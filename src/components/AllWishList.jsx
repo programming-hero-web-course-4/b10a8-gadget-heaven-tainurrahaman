@@ -23,7 +23,7 @@ const AllWishList = () => {
       <div className="bg-[#1D232A] py-9 flex justify-between text-white">
         <h4 className="font-bold text-[24px]">WishList</h4>
       </div>
-      <div>
+      <div className="bg-[#1D232A] mb-48">
         {wishlist.map((cart) => (
           <WishList key={cart.product_id} cart={cart}></WishList>
         ))}

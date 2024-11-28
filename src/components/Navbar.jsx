@@ -1,9 +1,23 @@
 import brandLogo from "../assets/brandLogo.webp";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const links = (
+    <div className="flex gap-2">
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/statistics">Statistics</NavLink>
+      </li>
+      <li>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+      </li>
+    </div>
+  );
+
   return (
     <nav className="flex justify-between my-5 md:my-7 lg:my-10 items-center  w-11/12 mx-auto pt-3 md:pt-8 ">
       <div className="hidden  md:flex items-center gap-2 ">
@@ -15,9 +29,7 @@ const Navbar = () => {
         <a className=" text-xl font-bold text-white">Gadget Heaven</a>
       </div>
       <div className="flex flex-row text-white font-bold text-[12px] md:text-[16px] gap-4 md:gap-10">
-        <Link to="/">Home</Link>
-        <Link to="/statistics">Statistics</Link>
-        <Link to="/dashboard">Dashboard</Link>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
       <div className="flex gap-2 justify-center items-center">
