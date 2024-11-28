@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DashBoard = () => {
   return (
     <div>
@@ -8,8 +10,12 @@ const DashBoard = () => {
           level. From smart devices to the coolest accessories, we have it all!
         </p>
         <div className="flex justify-center gap-6 pb-8">
-          <button className="px-10 py-2 rounded-full border-2">Cart</button>
-          <button className="px-10 py-2 rounded-full border-2">WishList</button>
+          <Link to="/allcart" className="px-10 py-2 rounded-full border-2">
+            Cart
+          </Link>
+          <Link to="/allwishlist" className="px-10 py-2 rounded-full border-2">
+            WishList
+          </Link>
         </div>
       </div>
     </div>

@@ -8,6 +8,8 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import GadgetDetails from "./components/GadgetDetails.jsx";
 import DashBoard from "./components/DashBoard.jsx";
 import Statistics from "./components/Statistics.jsx";
+import AllCart from "./components/AllCart.jsx";
+import AllWishList from "./components/AllWishList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashBoard></DashBoard>,
+      },
+      {
+        path: "/allcart",
+        element: <AllCart></AllCart>,
+      },
+      {
+        path: "/allwishlist",
+        element: <AllWishList></AllWishList>,
       },
       {
         path: "/statistics",
