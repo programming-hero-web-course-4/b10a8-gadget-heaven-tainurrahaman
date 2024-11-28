@@ -12,8 +12,8 @@ const GadgetCart = ({ gadget }) => {
           className="rounded-xl h-[100px] md:h-[160px] lg:h-[200px] w-[170px] md:w-[280px] "
         />
       </div>
-      <div className="pt-3 md:pt-5 items-center space-y-2 md:space-y-3 flex-grow mb-5">
-        <h2 className="card-title font-semibold text-[20px] md:text-[22px]">
+      <div className="pt-3 md:pt-5 items-center space-y-1 md:space-y-3 flex-grow mb-3 md:mb-5">
+        <h2 className="card-title font-semibold text-[16px] md:text-[22px]">
           {product_title}
         </h2>
         <p className="font-medium text-[14px] md:text-[16px]">
@@ -21,7 +21,10 @@ const GadgetCart = ({ gadget }) => {
         </p>
       </div>
       <div className="card-actions justify-center">
-        <Link to={`/gadgets/${product_id}`} className="btn btn-primary ">
+        <Link
+          to={`/gadgets/${product_id}`}
+          className="text-white py-2 px-3 text-[10px] md:text-[16px] rounded-xl bg-gray-500"
+        >
           View Details
         </Link>
       </div>

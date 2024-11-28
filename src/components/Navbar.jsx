@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = (
-    <div className="flex gap-2">
+    <div className="flex">
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
@@ -28,8 +28,8 @@ const Navbar = () => {
         />
         <a className=" text-xl font-bold text-white">Gadget Heaven</a>
       </div>
-      <div className="flex flex-row text-white font-bold text-[12px] md:text-[16px] gap-4 md:gap-10">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+      <div className="flex flex-row text-white font-normal md:font-bold text-[8px] md:text-[16px] gap-0 md:gap-10">
+        <ul className="menu menu-horizontal px-0 md:px-1">{links}</ul>
       </div>
 
       <div className="flex gap-2 justify-center items-center">

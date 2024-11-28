@@ -1,5 +1,6 @@
 import React from "react";
 import bannerImg from "../assets/banner.jpg";
+import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -13,9 +14,12 @@ const Banner = () => {
           level. From smart devices to the coolest accessories, we have it all!
         </p>
         <div>
-          <button className="px-7 py-3 rounded-full bg-white text-[#9538E2] font-bold text-[18px]">
+          <NavLink
+            to="/dashboard"
+            className="px-7 py-3 rounded-full bg-white text-[#9538E2] font-bold text-[18px]"
+          >
             Shop Now
-          </button>
+          </NavLink>
         </div>
       </div>
       <div className="flex justify-center rounded-3xl absolute left-[48px] md:left-24 lg:left-44 -bottom-[95px] md:-bottom-[240px] lg:-bottom-[290px]">

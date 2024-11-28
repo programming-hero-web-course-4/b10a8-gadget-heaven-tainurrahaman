@@ -20,10 +20,10 @@ const AllWishList = () => {
   return (
     <div>
       <DashBoard></DashBoard>
-      <div className="bg-[#1D232A] py-9 flex justify-between text-white">
-        <h4 className="font-bold text-[24px]">WishList</h4>
+      <div className="bg-[#1D232A] py-4 md:py-9 flex justify-between text-white">
+        <h4 className="font-bold text-[16px] md:text-[24px]">WishList</h4>
       </div>
-      <div className="bg-[#1D232A] mb-48">
+      <div className="bg-[#1D232A] mb-10 md:mb-48">
         {wishlist.map((cart) => (
           <WishList key={cart.product_id} cart={cart}></WishList>
         ))}
