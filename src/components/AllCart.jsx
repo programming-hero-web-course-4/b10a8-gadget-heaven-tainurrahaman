@@ -20,15 +20,6 @@ const AllCart = () => {
       (gadget) => parseInt(gadget.price) + totalCost
     );
     console.log(cost, totalCost);
-
-    // setTotalCost(
-    //   addGadgetList.map((gadget) => {
-    //     totalCost = parseInt(gadget.price) + totalCost;
-    //     return totalCost;
-    //   })
-    // );
-    // console.log(totalCost);
-
     setCardList(addGadgetList);
   }, []);
 
