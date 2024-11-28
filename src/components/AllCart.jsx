@@ -8,6 +8,7 @@ import Cart from "./Cart";
 const AllCart = () => {
   const allCart = useLoaderData();
   const [cardList, setCardList] = useState([]);
+  const [totalCost, setTotalCost] = useState(0);
 
   useEffect(() => {
     const storedAddList = getAddList();
@@ -15,6 +16,19 @@ const AllCart = () => {
     const addGadgetList = allCart.filter((cart) =>
       storedAddListStr.includes(cart.product_id)
     );
+    const cost = addGadgetList.map(
+      (gadget) => parseInt(gadget.price) + totalCost
+    );
+    console.log(cost, totalCost);
+
+    // setTotalCost(
+    //   addGadgetList.map((gadget) => {
+    //     totalCost = parseInt(gadget.price) + totalCost;
+    //     return totalCost;
+    //   })
+    // );
+    // console.log(totalCost);
+
     setCardList(addGadgetList);
   }, []);
 
@@ -23,8 +37,10 @@ const AllCart = () => {
       <DashBoard></DashBoard>
       <div className="bg-[#1D232A] py-5 md:py-9 flex justify-between text-white items-center">
         <h4 className="font-bold text-[12px] md:text-[24px]">Cart</h4>
-        <div className="flex gap-4 items-center">
-          <h3 className="font-bold text-[12px] md:text-[24px]">Total cost :</h3>
+        <div className="flex gap-4 items-center justify-center">
+          <h3 className="font-bold text-[12px] md:text-[24px]">
+            Total cost : {totalCost}
+          </h3>
           <button className="flex items-center justify-center gap-0 md:gap-2 py-1 md:py-2 px-2 md:px-4 rounded-full border-purple-400 border font-semibold text-[12px] md:text-[18px]">
             Sort by Price
             <span>

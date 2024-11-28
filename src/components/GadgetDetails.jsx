@@ -1,10 +1,12 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import React from "react";
 import { addToCartList } from "../utility/addToCartDb";
 import { addToWishlist } from "../utility/addToWishlistDb";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const GadgetDetails = () => {
   const { product_id } = useParams();
@@ -24,10 +26,12 @@ const GadgetDetails = () => {
 
   const handleAddList = (id) => {
     addToCartList(id);
+    toast("This item added to your Cart");
   };
 
   const handleWishList = (id) => {
     addToWishlist(id);
+    toast("This item added to your WishList");
   };
 
   return (
@@ -134,47 +138,9 @@ const GadgetDetails = () => {
               </button>
             </div>
           </div>
-
-          <div className="flex gap-4 mb-6">
-            {/* <div>
-            {specification.map((tag, idx) => (
-              <button key={idx} className="btn btn-xs mr-4  text-green-400">
-                {tag}
-              </button>
-            ))}
-          </div> */}
-          </div>
-          <hr />
-          {/* <div className="flex gap-14 mb-8">
-          <div className="space-y-2">
-            <p>Number of Pages :</p>
-            <p>Publisher :</p>
-            <p>Year of Publishing :</p>
-            <p>Rating :</p>
-          </div>
-          <div className="font-bold space-y-2">
-            <p>{totalPages}</p>
-            <p>{publisher}</p>
-            <p>{yearOfPublishing}</p>
-            <p>{rating}</p>
-          </div>
-        </div> */}
-          {/* <div className="flex mb-5 gap-4">
-          <button
-            onClick={() => handleReadList(bookId)}
-            className="btn btn-neutral"
-          >
-            Mark As Read
-          </button>
-          <button
-            onClick={() => handleWishList(bookId)}
-            className="btn btn-accent"
-          >
-            Add to WishList
-          </button>
-        </div> */}
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

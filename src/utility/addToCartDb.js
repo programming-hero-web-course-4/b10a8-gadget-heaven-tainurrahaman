@@ -1,5 +1,3 @@
-import { ToastContainer, toast } from "react-toastify";
-
 const getAddList = () => {
   const storeAddListStr = localStorage.getItem("add-list");
   if (storeAddListStr) {

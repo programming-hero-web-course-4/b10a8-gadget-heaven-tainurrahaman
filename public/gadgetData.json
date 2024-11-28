@@ -202,5 +202,56 @@
     ],
     "availability": true,
     "rating": 4.5
+  },
+  {
+    "product_id": 13,
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/Xxv4NKN/download-4.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "The Lenovo ThinkPad X1 Carbon offers business-class performance in a lightweight and durable design.",
+    "specification": [
+      "14-inch FHD+ display",
+      "Intel Core i7 processor",
+      "1TB SSD storage",
+      "16GB RAM",
+      "Carbon fiber finish"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 14,
+    "product_title": "Asus ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co.com/PN539zm/download-5.jpg",
+    "category": "Laptops",
+    "price": 1899,
+    "description": "A powerful gaming laptop with exceptional graphics and performance in a sleek design.",
+    "specification": [
+      "14-inch QHD display",
+      "AMD Ryzen 9 processor",
+      "1TB SSD storage",
+      "32GB RAM",
+      "NVIDIA RTX 4060 GPU"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 15,
+    "product_title": "Microsoft Surface Laptop Studio",
+    "product_image": "https://i.ibb.co.com/3m8q96m/download-6.jpg",
+    "category": "Laptops",
+    "price": 2599,
+    "description": "The Surface Laptop Studio is a versatile powerhouse designed for creativity and productivity.",
+    "specification": [
+      "14.4-inch PixelSense Flow touchscreen",
+      "Intel Core i7 processor",
+      "512GB SSD storage",
+      "16GB RAM",
+      "Dynamic woven hinge"
+    ],
+    "availability": true,
+    "rating": 4.6
   }
 ]
