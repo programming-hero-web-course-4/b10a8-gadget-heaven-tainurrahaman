@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import React from "react";
 import { addToCartList } from "../utility/addToCartDb";
+import { addToWishlist } from "../utility/addToWishlistDb";
 
 const GadgetDetails = () => {
   const { product_id } = useParams();
@@ -23,6 +24,10 @@ const GadgetDetails = () => {
 
   const handleAddList = (id) => {
     addToCartList(id);
+  };
+
+  const handleWishList = (id) => {
+    addToWishlist(id);
   };
 
   return (
@@ -120,8 +125,13 @@ const GadgetDetails = () => {
                 </span>
               </button>
             </div>
-            <div className="border-2 rounded-full p-2 opacity-50 font-bold text-[16px] md:text-[24px]">
-              <FaRegHeart />
+            <div className="border-2 rounded-full  opacity-50 font-bold text-[16px] md:text-[24px]">
+              <button
+                onClick={() => handleWishList(product_id)}
+                className="p-2"
+              >
+                <FaRegHeart />
+              </button>
             </div>
           </div>
 

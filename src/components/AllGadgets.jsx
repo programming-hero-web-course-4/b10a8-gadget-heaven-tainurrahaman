@@ -15,8 +15,8 @@ const AllGadgets = () => {
       <h3 className="font-bold text-[22px] md:text-[40px] text-white text-center mb-8 lg:mb-16">
         Explore Cutting-Edge Gadgets
       </h3>
-      <div className="w-full md:w-11/12 lg:w-10/12 mx-auto flex gap-2 md:gap-6">
-        <div className="w-1/5 md:w-1/6 lg:w-1/5 p-1 md:p-2 lg:p-6 bg-[#403546] rounded-xl md:rounded-2xl space-y-5 text-center lg:text-start">
+      <div className="w-full md:w-11/12 lg:w-10/12 mx-auto flex gap-2 md:gap-6 ">
+        <div className="w-1/5 md:w-1/6 lg:w-1/5 p-1 md:p-2 lg:p-6 bg-[#403546] rounded-xl md:rounded-2xl space-y-5 text-center lg:text-start ">
           <p className="rounded-3xl bg-[#1D232A] p-2 md:py-3 md:px-3 lg:px-5 font-normal md:font-medium text-[12px] md:text-[16px] lg:text-[18px]">
             All Product
           </p>
@@ -39,7 +39,7 @@ const AllGadgets = () => {
             Iphone
           </p>
         </div>
-        <div className="w-4/5 md:w-5/6 lg:w-4/5 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+        <div className="w-4/5 md:w-5/6 lg:w-4/5 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-6 ">
           {gadgets.map((gadget) => (
             <GadgetCart key={gadget.product_id} gadget={gadget}></GadgetCart>
           ))}

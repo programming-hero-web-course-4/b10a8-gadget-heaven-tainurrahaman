@@ -4,7 +4,7 @@ const GadgetCart = ({ gadget }) => {
   const { product_image, product_title, price, product_id } = gadget;
 
   return (
-    <div className=" bg-[#403546]  p-2 md:p-3 lg:p-5 flex flex-col">
+    <div className=" bg-[#403546]  p-2 md:p-3 lg:p-5 flex flex-col rounded-2xl">
       <div className="">
         <img
           src={product_image}

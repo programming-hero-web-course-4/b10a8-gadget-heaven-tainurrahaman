@@ -38,6 +38,7 @@ const router = createBrowserRouter([
       {
         path: "/allwishlist",
         element: <AllWishList></AllWishList>,
+        loader: () => fetch("gadgetData.json"),
       },
       {
         path: "/statistics",
