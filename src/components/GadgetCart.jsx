@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const GadgetCart = ({ gadget }) => {
   const { product_image, product_title, price, product_id } = gadget;
-  console.log(gadget);
 
   return (
     <div className=" bg-[#403546]  p-2 md:p-3 lg:p-5 flex flex-col">

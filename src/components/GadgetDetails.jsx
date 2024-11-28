@@ -3,6 +3,7 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import React from "react";
+import { addToCartList } from "../utility/addToCartDb";
 
 const GadgetDetails = () => {
   const { product_id } = useParams();
@@ -19,6 +20,10 @@ const GadgetDetails = () => {
     description,
     availability,
   } = product;
+
+  const handleAddList = (id) => {
+    addToCartList(id);
+  };
 
   return (
     <div className="relative pb-80 mb-80 ">
@@ -105,12 +110,15 @@ const GadgetDetails = () => {
           </div>
           <div className="flex items-center gap-4 ">
             <div>
-              <Link className="flex items-center bg-[#9538E2] py-2 px-4 rounded-full gap-2 font-normal md:font-bold text-[12px] md:text-[18px]">
+              <button
+                onClick={() => handleAddList(product_id)}
+                className="flex items-center bg-[#9538E2] py-2 px-4 rounded-full gap-2 font-normal md:font-bold text-[12px] md:text-[18px]"
+              >
                 Add to Cart
                 <span className="font-semibold md:font-bold">
                   <BsCart3 />
                 </span>
-              </Link>
+              </button>
             </div>
             <div className="border-2 rounded-full p-2 opacity-50 font-bold text-[16px] md:text-[24px]">
               <FaRegHeart />
