@@ -1,7 +1,23 @@
+import { useLoaderData } from "react-router-dom";
 import DashBoard from "./DashBoard";
 import { RiSortNumberAsc } from "react-icons/ri";
+import { useEffect, useState } from "react";
+import { getAddList } from "../utility/addToCartDb";
+import Cart from "./Cart";
 
 const AllCart = () => {
+  const allCart = useLoaderData();
+  const [cardList, setCardList] = useState([]);
+
+  useEffect(() => {
+    const storedAddList = getAddList();
+    const storedAddListStr = storedAddList.map((id) => parseInt(id));
+    const addGadgetList = allCart.filter((cart) =>
+      storedAddListStr.includes(cart.product_id)
+    );
+    setCardList(addGadgetList);
+  }, []);
+
   return (
     <div>
       <DashBoard></DashBoard>
@@ -19,6 +35,11 @@ const AllCart = () => {
             Purchase
           </button>
         </div>
+      </div>
+      <div className="bg-[#1D232A] mb-48">
+        {cardList.map((cart) => (
+          <Cart key={cart.product_id} cart={cart}></Cart>
+        ))}
       </div>
     </div>
   );
