@@ -10,6 +10,7 @@ import DashBoard from "./components/DashBoard.jsx";
 import Statistics from "./components/Statistics.jsx";
 import AllCart from "./components/AllCart.jsx";
 import AllWishList from "./components/AllWishList.jsx";
+import OfferProducts from "./components/OfferProducts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
+        loader: () => fetch("/gadgetData.json"),
+      },
+      {
+        path: "/offerProducts",
+        element: <OfferProducts></OfferProducts>,
         loader: () => fetch("/gadgetData.json"),
       },
     ],
